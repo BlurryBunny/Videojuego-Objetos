@@ -1,0 +1,25 @@
+Los archivos de texto sirven para dar memoria a las colecciones de objetos.
+Existen colecciones para enemigo, escenarios y conexiones a otros escenarios del nivel.
+
+Los archivos de texto para escenarios contendran el siguiente formato en el orden presentado.
+Tipo de escenario:
+  Define cuantas puertas y conexiones tendra, con ello se sabra que tipo de muros poner en el proyecto.
+
+Numero de enemigos:
+  Define el tope para la coleccion de enemigos que tendra la coleccion de enemigos
+
+Enemigos
+  Para enemigos se define primero las posiciones de X y Y que tendran inicialmente dentro del escenario.
+  Se define que tipo de enemigo es:
+    1. Enemigo normal
+    2. Enemigo fuerte
+    3. Enemigo jefe final escenario 1.
+    4. Enemigo jefe final escenario 2.
+    5. Enemigo jefe final escenario 3.
+  Esto se guardara en variables locales de instancia que terminaran en el constructor de un nuevo enemigo para 
+  agregar a la coleccion correspondiente.
+
+Conexion a siguiente escenario.
+  Numero de escenario: indica el escenario al que se quiere ingresar si es que entra en la puerta.
+  
+  Direccion de puerta: indica donde esta colocada la puerta para poder acceder a otro escenario.
